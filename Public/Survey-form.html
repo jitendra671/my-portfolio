@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <style>
+        form{
+            border:9px solid black;
+             width: 70%;
+            margin-left:15em;
+            line-height: 3em;
+            background-image: linear-gradient(rgb(235, 77, 77),rgb(143, 143, 233));
+        }
+        h1,p{
+            text-align: center;
+        }
+        h1{
+            background-color: rgb(200, 255, 0);
+            margin-top: 0;
+        }
+        input,select{
+            margin-left: 20px;
+            
+        }
+        span{
+            color:red;
+        }
+        label{
+            margin-left: 20em;
+             }     
+        ul li{
+            list-style-type: none;
+            line-height:1em;
+            margin-left: 20em;
+           
+        }  
+        .btn{
+            margin-left: 22em;
+            
+        }
+        button{
+            background-color: black;
+          
+            padding:0.5em;
+            margin-right:1em;
+            border-radius:1em;
+        }
+        button a{
+            color:white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1>Survey Form</h1>
+         <p>Let us know how we can improve free code camp</p>
+         <label for=""><span>*</span>Name:</label>
+         <input type="text" name="Txtname" id="" placeholder="Enter your name"><br>
+         <label for=""><span>*</span>Email:</label>
+         <input type="email" name="Txtemil" id="" placeholder="Enter your Email"><br>
+         <label for=""><span>*</span>Age:</label>
+         <input type="number" name="Age" id="" placeholder="Age"><br>
+         <label for="" style="margin-left:52px;">Which option best describe your currrent role?</label>
+         <select>
+             <option value="">Student</option>
+             <option value="">Profession</option>
+             <option value="">Non-profession</option>
+         </select><br>
+         <label for="" style="margin-left:31px;"><span>*</span>How likely is that you would recommed FreecodeCamp in a friend?</label><br>
+         <ul>
+            <li><input type="radio" name="survey" id="">Definitely</li>
+            <li><input type="radio" name="survey" id="">Maybe</li>
+            <li><input type="radio" name="survey" id="">Not sure<br></li>
+
+         </ul>
+         <label for="" style="margin-left:9em;">What do you like most in FCC:</label>
+         <select>
+             <option value="">Select an option</option>
+             <option value="">Select an option</option>
+             <option value="">Select an option</option>
+             <option value="">Select an option</option>
+         </select><br>
+         <label for="" style="margin-left:1em;">Things that should be improved in the future (Check all that apply)</label><br>
+         <ul>
+             <li><input type="checkbox" name="" id="box">Front end Project</li>
+             <li><input type="checkbox" name="" id="box">Back-end project</li>
+             <li><input type="checkbox" name="" id="box">Data visualization<br></li>
+         </ul>
+         
+         <div class="btn">
+            <button type="submit"> <a href="">Submit</a> </button>
+            <button type="reset"> <a href="">Cancel</a> </button>
+         </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-voting system</title>
+    <style>
+        fieldset{
+            width: 60%;
+            position:relative;
+            margin:0px;
+            text-align: center;
+            line-height: 3em;
+            border-radius:1em;
+            font-weight: bold;
+            
+        }
+        fieldset input{
+            margin-left:10px;
+            padding:0.3em;
+        }
+        form{
+         margin-left:15em;   
+         margin-top: 10em;
+         background-image: linear-gradient(white 70%,rgb(156, 149, 149));
+         padding: 50px;
+         margin-right: 10em;
+        }
+        button{
+            margin-left: 12em;
+            margin-top:1em;
+            background-color:black;
+            color: white;
+            padding:10px 30px;
+            border-radius: 2em;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Voting Management system</legend>
+            <label for="">Name:</label>
+            <input type="text" name="" id="" placeholder="Enter Your Name" required><br>
+            <label for="">Father Name:</label>
+            <input type="text" name="" id="" placeholder="Enter Your Father Name" required ><br>
+            <label for="">DOB:</label>
+            <input type="date" name="" id="" placeholder="dd------yyyy" required><br>
+            Gender: <input type="radio" name="gender" id=""> <input type="radio" name="gender" id=""><br>
+            <label for="">CNIC:</label>
+            <input type="number" name="" id="" placeholder="Enter Your CNIC Number" required><br>
+    
+            <label for="">Political parties:</label>
+            <select value="">
+                <option value="">Choose Political Party</option>
+                <option name="BjP" id="">BJP</option>
+                <option name="BJD" id="">BJD</option>
+                <option name="TMC" id="">TMC</option>
+                <option name="Cogress" id="">Cogress</option>
+                <option name="ADM" id="">ADM</option>
+            </select>
+    
+        </fieldset>
+        <button>Submit</button>
+
+
+
+
+    </form>
+   
+    
+</body>
+</html>

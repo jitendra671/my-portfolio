@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Fonts/css/all.css">
+    <title>Grid-cascading style sheet</title>
+    <style>
+        #continer{
+            display: grid;
+            grid-template-columns: 2fr 10fr;
+            grid-gap:20px;
+        }
+      
+        header,footer{
+            background-color:rgb(230, 220, 220);
+            padding:10px;
+            border-radius:10px;
+            text-align:center;
+            font-size:20px;
+            }
+            header{
+                grid-column:2;
+                grid-row:1;
+                height:30px;
+            }
+            footer{
+                grid-column:2;
+                grid-row:3;
+            }
+            article{
+                grid-column:2;
+                grid-row:2;
+            }
+            aside{
+                grid-column:1;
+                grid-row:2;
+                grid-gap:30px;
+            }
+            ul li{
+                list-style: none;
+                margin-bottom:30px;
+                font-size:20px;
+            }
+            span{
+                color: blue;
+            }
+            #para2{
+          margin-left:20px;
+          text-align: justify;   
+        }
+     
+    </style>
+</head>
+<body>
+    <div id="continer">
+        <header><span class="fa fa-shopping-cart"></span>JavaScript</header>
+        
+    
+        <article>
+            <div id="Introduction">
+                <h2 style="color:red;">Introduction</h2>
+                <p>
+                    javascript is a cross-platform,object-oriented scripting langauge.it is
+                    a small and lightweight language. Inside a host enviroment (for example, a web browser)
+                    ,Javascript can be connected to the objects of its enviroment to provide programmatic controlover them
+                </p>
+                <p>
+                    Javascript contains a standard library of objects. such as Array, Date and Math,and a 
+                    core set of language elements such as operator, control structures, and statements. core
+                    JavaScript can be extended for a variey of purposes by supplementing it widthassitonal object, for example
+
+                </p>
+                <ul type=>
+                    <li>Client-side JavaScript extends the core language by supplying</li>
+                </ul>
+            </div>
+            <div id="sec">
+                <h2 style="color:rgb(119, 0, 255);">Introduction</h2>
+                <p>
+                    javascript is a cross-platform,object-oriented scripting langauge.it is
+                    a small and lightweight language. Inside a host enviroment (for example, a web browser)
+                    ,Javascript can be connected to the objects of its enviroment to provide programmatic controlover them
+                </p>
+                <p>
+                    Javascript contains a standard library of objects. such as Array, Date and Math,and a 
+                    core set of language elements such as operator, control structures, and statements. core
+                    JavaScript can be extended for a variey of purposes by supplementing it widthassitonal object, for example
+
+                </p>
+                <ul>
+                    <li>Client-side JavaScript extends the core language by supplying</li>
+                </ul>
+            </div>
+           
+     </article>
+        
+    <aside>
+        <h2>Js Documentation</h2>
+     <ul>
+        <li> <a href="# Introduction"> Introduction</a></li>
+        <li> <a href="#sec">what you should already know</a> </li>
+        <li> <a href="">JavaScript and Java</a> </li>
+        <li> <a href="">Hello Worlds</a> </li>
+        <li> <a href="">Variable</a></li>
+        <li> <a href=""> Declaring variables</a></li>
+        <li> <a href=""> Variable Scope</a></li>
+    </ul>
+    
+    </aside>
+    <footer>
+        @copyright 2020 javascript
+    </footer>
+    
+    </div>
+
+   
+</body>
+</html>

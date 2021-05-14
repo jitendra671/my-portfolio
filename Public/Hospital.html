@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Hospital Management</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box ;
+        }
+        .container{
+            display: flex;
+            flex-direction:column;
+        }
+        .header{
+      
+            background-color: rgb(88, 164, 235);
+        }
+        .header .header-left div{
+                   display:inline-block;
+                   margin-left: 2em;
+                   margin-top:1em;
+                   margin-bottom:2px;
+        
+        }
+        .header-left div a{
+            color:black;
+        }
+        .header-right{
+            float: right;
+            margin-top: -1em;
+            margin-right:4em;
+            font-size:1.5em;
+
+        }
+        .header-right span{
+            color:blue;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            background-color:#FCFCFC;
+            margin: 0;
+        }
+        .navbar-left{
+            padding:1.5em;
+        }
+        .navbar-left span{
+            color:rgb(88, 164, 235);
+        }
+        .navbar-right{
+            justify-content:flex-end;
+        }
+        .navbar-right li{
+            list-style-type:none;
+            display:inline-block;
+            padding:1.5em;
+        }
+        .navbar-right li a{
+          text-decoration: none;
+          font-size: 1.2em;
+          color:black;
+        }
+        .section .content{
+            position:absolute;
+            margin:-346px 145px;
+            font-size:1.5em;
+            color:rgb(32, 24, 24);
+            text-align: left;
+
+        }
+        .section .content h2{
+            text-transform: uppercase;
+        }
+        .main{
+            margin-top:-2px;
+            background-color: #f5f5f5;
+            height:100%;
+        }
+        .main-content h2{
+            text-align:center;
+            padding:1em 2em;
+        }
+        .main-content p{
+            padding:0.5em 13em;
+            text-align: center;
+        }
+        .card{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top:4em;
+        }
+        .card img{
+            border-top-right-radius:2em;
+        }
+        .card h2{
+            opacity: 0.5;
+        }
+        .card1, .card2 ,.card3{
+            border:1px solid black;
+          width: 302px;
+          border-top-right-radius:2em;
+        }
+        .sub-card{
+            border-top:5px solid rgb(17, 154, 218);
+            
+        }
+        .sub-card p{
+            text-align:left;
+
+        }
+        .footer-header{
+            margin-top:4em;
+        }
+        .footer-content{
+            display: inline-flex;
+            justify-content:space-between;
+            margin-top:3em;
+        }
+        .footer-subcontent{
+            padding: 5em;
+            text-align: left;
+        }
+       
+        
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!---------------------Header session------------>
+        <div class="header">
+            <div class="header-left">
+                <div><a href="#"> <span class="fab fa-facebook"></span></a></div>
+                <div><a href="#"> <span class="fab fa-instagram"></span></a></div>
+                <div><a href="#"> <span class="fab fa-twitter"></span></a></div>
+                <div><a href="#"> <span class="fab fa-linkedin"></span></a></div>
+                <div><a href="#"> <span class="fab fa-youtube"></span></a></div>
+            </div>
+            <div class="header-right">
+                <span class="fas fa-phone-volume"></span>&nbsp;+919348874158
+            </div>
+        </div>
+        <!----------------Navbar session----------------->
+        <div class="navbar">
+            <div class="navbar-left">
+                <h2> <span class="fas fa-hospital"></span>HEALTH PLUS</h2>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li> <a href="">Home</a></li>
+                    <li> <a href="">About Us</a></li>
+                    <li> <a href="">Servies</a></li>
+                    <li> <a href="">Gallery</a></li>
+                    <li> <a href="">Login</a></li>
+                    <li> <a href="">contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="section">
+            <img src="../picture/hos.jpg" width="100%" height="700em"alt="Qualified Doctor">
+           <div class="content">
+            <h2>Qualified Doctor</h2>
+            <p>You Can Trust Us</p>
+           </div>
+        </div>
+        <div class="main">
+            <div class="main-content">
+                <h2>24/7 SERVICE</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex similique excepturi sint, harum enim eaque odit explicabo sunt dolore iste inventore possimus cum! Modi et nam amet architecto dicta id.</p>
+            </div>
+            <div class="card">
+                <div class="card1">
+                    <img src="../picture/hos-1.jpg" height="260px" width="300px" alt="">
+                   <h2 style="text-align: center;">Medical Counselling</h2>
+                        <div class="sub-card">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus ut quis voluptatem pariatur est nulla officia consequatur eum molestias sequi voluptas minima debitis neque doloremque inventore, quibusdam magni odit quam?</p>
+                     </div>
+                </div>
+                <div class="card2">
+                    <img src="../picture/hos-2.jpg" height="260px" width="300px" alt="">
+                    <h2 style="text-align: center;">Qualified Doctor</h2>
+                     <div  class="sub-card">
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non ratione tenetur, rerum libero aspernatur facere incidunt voluptates asperiores saepe. Vel modi temporibus repellat nesciunt officia repudiandae corporis necessitatibus illo dignissimos?</p>
+                    </div>
+                </div>
+                <div class="card3">
+                    <img src="../picture/hos-3.jpg" height="260px" width="300px" alt="">
+                    <h2 style="text-align: center;">Emergency services</h2>
+                    <div class="sub-card"> 
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi porro fugit aperiam. Cum repellendus iure voluptas eveniet qui magni dignissimos, obcaecati cumque. Veritatis ea corrupti molestiae et, in cupiditate assumenda?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="footer-header">
+                    <h2 style="text-align: center;padding:1em;">OUR SPECIALITIES</h2>
+                    <p style="text-align:center;padding:0em 6em;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio quisquam, alias voluptatem necessitatibus quis sit ex error quas illo sapiente quaerat reiciendis eius earum officiis veniam minus, hic cupiditate itaque.</p>
+                </div>
+                <div class="footer-content">
+                    <div class="footer-subcontent">
+                        <h2 style="text-align:left;color:rgb(17, 217, 243);">Consulting</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa quod ex perspiciatis sapiente quos magni, ipsum fugit itaque debitis mollitia inventore nulla repudiandae. Distinctio iusto rem repellendus minus sunt deleniti.</p>
+                    </div>
+                    <div class="footer-subcontent">
+                        <h2 style="text-align:left;color: rgb(17, 217, 243);">General Checkup</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit saepe, quod nostrum deleniti expedita unde tempore soluta adipisci consequuntur nam error omnis corrupti ut aut? Nam saepe dicta cumque quia.</p>
+                    </div>
+                    <div class="footer-subcontent">
+                        <h2 style="text-align:left;color:rgb(17, 217, 243);">Heart</h2>
+                        <p> <span calss="fas fa-record-vinyl"></span>   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem, velit! Quas, enim tenetur. Laudantium aliquam ipsum aut! Accusantium saepe, rerum voluptatum deleniti omnis eum assumenda soluta blanditiis animi reprehenderit sint!</p>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+                
+                    
+                
+    
+               
+            
+            
+       
+
+</body>
+</html>

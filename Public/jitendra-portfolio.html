@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="">
+    <link rel="stylesheet" href="../Font/css/all.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>    
+    <title>Jitendra-portfolio</title>
+    <style>
+        body{ 
+            width:100%;
+        }
+        header{
+            border-bottom: 1px solid rgb(213, 216, 218);
+            width:100%;
+            
+            display:fixed;
+            margin:0px;
+            background-color:rgb(73, 71, 71);
+            color:white;
+        }
+        header:hover{
+            color:white;
+        }
+        section{
+            background-color:rgb(61, 202, 221);
+            height: 600px;
+        }
+  
+     #navbar ul li{
+            list-style-type: none;
+            display:inline-flex;
+            margin-right:35px;
+            padding:20px;
+        }
+        #skill{
+            width:100%;
+            height:1500px;
+            background-color: rgb(233, 228, 218);
+            }
+        #profile-btn{
+            margin-left:16cm;
+            padding:10px;
+            background-color:pink;
+            transform: translate(0px,0px);
+            transition:2s;
+        }
+        #profile-btn:hover{
+            transform: translate(0px,50px);
+            transition: 2s;
+        }
+
+        table{
+            margin-left: 230px;
+        }
+        #profile-star{
+            transform:skew(0);
+            transition:2s;
+            color:rgb(100, 94, 94);
+        }
+        #profile-star:hover{
+            color:black;
+            transform: skew(2);
+            transition:2s;
+        }
+        #link li a{
+            color:white;
+            text-decoration: none;
+            
+        }
+      
+        table img:hover{
+                opacity: 0.8;
+                width:210px;
+                height:210px;
+        }
+    #Certificate{
+            margin-left:12cm;
+            text-transform:capitalize;
+            margin-top:80px;
+            
+            }
+           
+ #icon span{
+         font-size: 30px;
+         margin-right:10px;
+     }
+     #icon span:hover{
+         color:white;
+     }
+     #file-btn{
+         background-color: rgb(54, 74, 75);
+         color:white;
+     }
+     #file-btn:hover{
+        background-color:rgb(76, 143, 155);
+        color:black;
+     }
+    </style>
+</head>
+<body >
+    <!----Header section----->
+    <header>
+    <nav class="  text-capitalize " id="navbar">
+        <ul id="link">
+            <li style="margin-right: 450px; "><a href="#">jitendra</a></li>
+            <li ><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#skill">Skill</a></li>
+            <li><a href="#Certificate">Certificate</a></li>
+            <li><a href="#contact" data-toggle="modal">Contact</a></li>
+            
+        </ul>
+      <!--Modal section for Contact-->  
+      <form action="">
+        <div class="modal fade" id="contact">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header bg-dark text-light">
+                        <h3 class="text-center">Contact </h3>
+                        <button  data-dismiss="modal" class="close text-light">x</button>
+    
+                    </div>
+                    <div class="modal-body bg-dark text-light p-5" >
+                        <dl>
+                            <dt>Name</dt>
+                            <dd><input type="text" name="" id=""></dd>
+                            <dt>E-mail</dt>
+                            <dd><input type="mail" name="" id=""></dd>
+                            <dt>Phone no.</dt>
+                            <dd><input type="phone" name="" id=""></dd>
+                            <dt>massage</dt>
+                            <dd><textarea></textarea></dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer">
+                        <button>Submit</button>
+                        <button data-dismiss="modal">Cancel</button>
+    
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+      </form>
+    </nav>
+            
+      
+ </header>
+       <!-----------Body session------------->
+    <Main>
+                                                <!-----------Home session------------->
+        <section>
+            <div class="row"  id="Home">
+               
+                  <div class="col-12">
+                    <img src="../picture/selfi.jpg" class=" border rounded-pill text-center" style="margin-left: 14cm;margin-bottom:1cm;margin-top: 1cm;"height="230px" width="230px" alt="">
+                  </div>
+                  <div class="col-12" style="color:whitesmoke;font-size:50px;text-transform: uppercase;margin-left:11cm;">
+                      <sapn>jitendra pradhan</sapn><br>
+                      <span style="margin-left:120px;"><span>----<span class="fa fa-star" id="profile-star"></span><span>----</span></span>
+                      
+                  </div>
+                  <div class="col-7">
+                    <button class="btn" data-toggle="modal" data-target="#my-profile" id="profile-btn"> My profile</button> 
+                  </div>
+                  <!--profile Modal-->
+                  <form action="">
+                    <div class="modal fade" id="my-profile">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrool">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <span>My profile</span>
+                                    <span data-dismiss="modal" class="close text-dark">x</span>
+                                </div>
+                                <div class="modal-body bg-transparent">
+                                    <span>
+                                        Name:-jitendra pradhan<br>
+                                        E-mail:-jitendrapradhan213@gamil.com<br>
+                                        Gender:-Male<br>
+                                        phone no.:-9348874153<br>
+                                        Qualification:-BSc
+                                    </span>
+                                </div>
+                                <div class="modal-footer text-center">
+                                    <button class="btn btn-success" data-dismiss="modal">ok</button>
+            
+                                </div>
+            
+                            </div>
+            
+                           </div>
+            
+                        </div>
+                </form>
+            </div>
+            
+        </section>
+        <article>
+            <div id="skill">
+                <div style="margin-left: 15cm;color:black;font-size: 30px;margin-bottom: 50px;">
+                    <span style="margin-left:1cm;text-transform:uppercase;">skill</span><br>
+                    <span><span>----<span class="fa fa-star text-warning"></span><span>----</span></span>
+                </div>
+                   
+                <div class="table table-borderless" style="margin-left:3cm;">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><img src="../picture/html.png"  height="200px" width="200px"alt=""></td>
+                                <td><img src="../picture/css.png"  height="200px" width="200px"alt=""></td>
+                                <td><img src="../picture/bootstrap.png"  height="200px" width="200px"alt=""></td>
+                            </tr>
+                        </tbody>
+                        <thead>
+                            <tr>
+                                <td><img src="../picture/javascript.jpg"  height="200px" width="200px"alt=""></td>
+                                <td><img src="../picture/less.jpg"  height="200px" width="200px"alt=""></td>
+                                <td><img src="../picture/sass.png"  height="200px" width="200px"alt=""></td>
+                            </tr>
+                        </thead>
+                    </table>
+
+                </div>
+                <!-----------------------Certificate session---------------->
+            <div id="Certificate">
+                <div>
+                    <span style="margin-left:2cm;font-size:30px;text-transform: uppercase;"><span class="fas fa-certificate text-primary "></span>Certificate</span>
+                </div>
+                <div  style="font-size: 30px;margin-top: 80px;padding:10px;">
+                    <ul>
+                        <li>canadian banking certification</li>
+                        <li>Statistics & Analytics_Foundation cerification</li>
+                        <li>European Banking certification</li>
+                        <li>Retail banking function & delivery cerification</li>
+                    </ul>
+                
+                </div>
+            </div>
+            <!-----------------------------About session---------------->
+            <div id="About" style="margin-top:3cm;">
+                <div style="text-align: center;font-size: 30px;text-transform:uppercase;">
+                    <span>About</span>
+                </div>
+                <table class="table-responsive-md border table-borderless" style="font-size:22px;font-family: sans-serif;">
+                    <thead  style="text-align: center;margin-left:20px;">     
+                        <tr>
+                            <th colspan="2">-----<span class="fa fa-star text-secondary"></span>-----</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <div>
+                            <tr>
+                                <td style="text-indent: 2cm;">   I am passionate about smart worker <br>
+                                    who is always ready to work in deadline manner<br>
+                                    i love techical proffession &  I am an innovative<br>
+                                     thinker who likes to think out of the box. Thinking,<br>
+                                     visualizing and finding a way to shape of visualizations..
+                                    
+                                </td>
+                                <td>
+                                  <div>
+                                      <ul>
+                                          <li>BSC Graduate student</li>
+                                          <li>technology enthusiasm </li>
+                                          <li>Quick learner and Team player</li>
+                                          <li>painting hobby of my life</li>
+                                          <li>interest in learn new things</li>
+                                      </ul>
+                                  </div>
+                                    
+                            </tr>
+                          
+                        </div>
+
+                    </tbody>
+                    <tfoot style="text-align: center;">
+                        <tr>
+                            <td colspan="2"><a href="../docs/Resume-converted (1).pdf" target="_blank"><button id="file-btn"><span class="fas fa-download" ></span>Dowload My CV</button></a> </td>
+                        </tr>
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+            </div>
+            
+        
+
+        </article>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+       
+        
+          
+    </Main>   
+
+
+
+
+<!----Footer section-->
+
+<footer>
+  <div class="row " style="padding-top: 3cm; background-color:rgb(19, 24, 23);color:white;position:sticky;">
+      <div class="col-4" style="margin-left:5cm;">
+         <span>Contact</span>
+         <div>
+            E-mail-Jitendrapradhan679@gmail.com<br>
+            phone-9348874153
+         </div>
+      
+      </div>
+      <div class="col-3">
+          <span>Address</span>
+          <address class="text-capitalize">
+              plot no.10 3rd floor,<br>
+              near hanuman temple,ram colony<br>
+              chilkaguda,secunderbad<br>
+              50003,hyderabad
+          </address>
+       </div>
+      <div class="col-3" id="icon" >
+        <a href=""><span  class="fab fa-facebook"></span></a>
+        <a href=""><span class="fab fa-instagram"></span></a>
+        <a href=""><span class="fab fa-twitter"></span></a>
+        <a href="https://wa.me/919348874153"><span class="fab fa-whatsapp"></span></a>
+        <a href=""><span class="fab fa-linkedin"></span></a>
+        
+      </div>
+
+  </div>
+
+</footer>
+</body>
+</html>

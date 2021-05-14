@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Font/css/all.css">
+        <title>A simple calculator</title>
+        <style>
+            body{
+                background-color: rgb(212, 170, 170);
+            }
+            .container{
+                height: 550px;
+                width:1000px;
+                background-image: linear-gradient(rgb(108, 108, 197),rgb(103, 167, 103),pink );
+                margin:80px;
+                position: relative;
+            }
+
+
+        #clear{
+        width:130px;
+        
+        }
+        .fromstyle{
+        width:280px;
+        height:460px;
+        margin:auto;
+        border:2px solid black;
+        border-radius: 10px;
+        text-align: center;
+        background-color: rgb(202, 156, 156);
+    
+        }
+        input
+        {
+        width:65px;
+        height:70px;
+        margin-bottom:4px;
+        background-color:rgb(192, 221, 255);
+        font-size:20px;
+
+        }
+        #answerstyle{
+        width:130px;
+        }
+        input[type=button]:nth-child(6){
+            background-color: rgb(109, 211, 230);
+            font-size: 20px;
+        }
+        input[type=button]:nth-child(11){
+            background-color: rgb(199, 202, 27);
+            font-size: 20px;
+        }
+        input[type=button]:nth-child(16){
+            background-color: rgb(235, 157, 218);
+            font-size: 20px;
+        }
+        input[type=button]:nth-child(20){
+            background-color: rgb(127, 216, 105);
+            font-size: 20px;
+        }
+        input[type=button]:nth-child(22){
+            background-color: red;
+            
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="fromstyle">
+                <form name="forms">
+                <input type="text" style="width:265px;" name="answer" id="answerstyle"> 
+                <br>
+                <input type="button" value= " 7 " onclick="forms.answer.value += '7' ">
+                <input type="button" value= " 8 " onclick="forms.answer.value += '8' ">
+                <input type="button" value= " 9 " onclick="forms.answer.value += '9' ">
+                <input type="button" value= " *" onclick="forms.answer.value += '*' ">
+                <br> 
+                <input type="button" value= " 4 " onclick="forms.answer.value += '4' ">
+                <input type="button" value= " 5 " onclick="forms.answer.value += '5' ">
+                <input type="button" value= " 6 " onclick="forms.answer.value += '6' ">
+                <input type="button" value= " - " onclick="forms.answer.value += '-' ">
+                <br> 
+
+                <input type="button" value= " 1 " onclick="forms.answer.value += '1' ">
+                <input type="button" value= " 2 " onclick="forms.answer.value += '2' ">
+                <input type="button" value= " 3 " onclick="forms.answer.value += '3' ">
+                <input type="button" value= " + " onclick="forms.answer.value += '+' ">
+                <br>  
+                <input type="button" value= " 0 " style="width:135px;" onclick="forms.answer.value += '0' ">
+                <input type="button" value= " / " onclick="forms.answer.value += '/' ">
+
+
+                <input type="button" value= " =" onclick="forms.answer.value = eval(forms.answer.value) ">
+
+                <br> 
+                <input type="button" value=" clear " style="width:272px;" onclick="forms.answer.value = ''" id="clear">
+                </form>
+        </div>
+        </div>
+    </body>
+</html>
