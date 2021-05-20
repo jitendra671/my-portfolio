@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>life in Music</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+
+        }
+        .header{
+            display: flex;
+            flex-direction:column;
+            background-image:linear-gradient(rgb(217,174,90),rgb(218, 169, 71),rgb(218, 169, 71));
+        }
+        .header-logo{
+            padding-left: 4em;
+            padding-top: 2em;
+            font-size:1.2em;
+            color: black;
+        }
+        .header-logo span{
+            color:white;
+        }
+        .header-logo span:hover{
+                color:red;
+        }
+        .header-nav{
+           float: right;
+           padding-bottom: 2em;
+        
+        }
+        .header-nav li{
+            list-style-type:none;
+            display: inline-block;
+            text-transform: uppercase;
+            margin-right: 3.5em;
+         }
+         .header-nav a{
+             text-decoration: none;
+             color: white;
+         }
+        .header-video h3{
+            position:absolute;
+            margin-left:15em;
+            margin-top: 8em;
+            font-size:1.5em;
+            font-family:'Courier New', Courier, monospace;
+             color: rgb(32, 68, 27);
+            
+        }
+        .header-video a{
+            position:absolute;
+            margin-left:29em;
+            margin-top: 16em;
+            text-decoration: none;
+            background-color: rgb(25, 26, 24);
+            color: white;
+            padding:0.9em;
+            border-radius: 2em
+        }
+        .section{
+            background-color: #ebe7e7;
+            height:1100px;
+        }
+        .icon{
+            padding:3em ;
+            text-align: center;
+        }
+        .icon span{
+            margin-left:5em;
+            font-size: 1.2em;
+        }
+        .icon a{
+            color:black;
+        }
+        table{
+            margin-left: 19em;
+            margin-top:5em;
+        }
+        table td{
+            padding:1em;
+        }
+        table img{
+            border-radius: 50%;
+        }
+        table img:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .footer-1{
+            background-color: rgb(22, 58,66);
+            height: 393px;
+            flex-direction: column-reverse;
+            margin-top: -397px;
+        }
+        .footer-1 h2{
+            text-align: right;
+            margin-right:8em;
+            padding:70px;
+            color:white;
+        }
+        .footer-1 p{
+            text-align: right;
+            margin-right:8em;
+            font-family: cursive;
+            color:white;
+
+        }
+        #play-icon{
+            margin-left:57em;
+            font-size:18px;
+            padding: 2em;
+            color:rgb(218, 147, 42);
+        }
+        .footer-2{
+            color:white;
+            background-color:black;
+            height:530px;
+            
+           
+        }
+        #footer-icon{
+            text-align: center;
+        }
+        #footer-icon h3{
+            padding:13px;
+            color:coral;
+        }
+        #footer-icon span{
+            margin-left:2em;
+            font-size: 2em;
+            padding:10px 0px;
+            color:rgb(64, 221, 135);
+        }
+        #main-column{
+            display: flex;
+            text-align:left;
+            margin-left: 10em;
+            margin-top: 4em;
+        }
+        #column{
+            margin-right: 15em;
+        }
+        #column input{
+            line-height: 2em;
+        }
+      
+      
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <div class="header-logo">
+                    <h3><span class="fas fa-headphones-alt"></span> Music Suno</h3>
+                </div>
+               <div class="header-nav">
+                <ul>
+                    <li><a href="">home</a></li>
+                    <li><a href="">Album</a></li>
+                    <li><a href="">blog</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+               </div>
+              
+            </div >
+            <div class="header-video">
+                
+            <h3>Play Music</h3>
+             <button><a href="#">More Music</a></button>
+            <video src="../picture/music.mp4" autoplay height="500px" width="100%"></video>
+
+            </div>
+
+        </div>
+        <div class="section">
+            <div class="icon">
+                 <a href=""><span class="fas fa-th"></span></a>
+                 <a href=""><span class="fas fa-headphones-alt"></span></a>
+                 <a href=""><span class="fas fa-music"></span></a>
+                 <a href=""><span class="fas fa-guitar"></span></a>
+                 <a href=""><span class="fas fa-compact-disc"></span></a>
+                 <a href=""><span class="fab fa-spotify"></span></a>
+            </div>
+            <table width="40%">
+                <tbody>
+                    <tr>
+                        <td><img src="../picture/music-1.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-2.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-3.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-4.jpg" alt="" height="150px" width="180px"></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><img src="../picture/party.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/disk.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/earphone.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-6.jpg" alt="" height="150px" width="180px"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="../picture/music-7.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/ear-music.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-9.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-8.jpg" alt="" height="150px" width="180px"></td>
+                       
+                    </tr>
+                    <tr>
+                        <td><img src="../picture/earphone.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/dj.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/ear-music.jpg" alt="" height="150px" width="180px"></td>
+                        <td><img src="../picture/music-5.jpg" alt="" height="150px" width="180px"></td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+        <div class="footer">
+            <img src="../picture/dancer.jpg" alt="" height="700px" width="500px">
+
+            <div class="footer-1">
+               <h2>JUST PRESS <span>PLAY</span> AND GO</h2>
+               <p>“Life is one grand sweet song so start the music.” – ...</p>
+               <span class="far fa-play-circle" id="play-icon"></span>
+            </div>
+            <div class="footer-2">
+                <div id="footer-icon">
+                    <h3>FOLLOW ON SOCIAL MEDIA</h3>
+                    <span class="fab fa-facebook-square"></span>
+                    <span class="fab fa-twitter-square"></span>
+                    <span class="fab fa-linkedin-in"></span>
+                    <span class="fab fa-instagram"></span>
+                </div>
+                <hr>
+                <div id="main-column">
+                    <div id="column">
+                        <h2>Contact</h2>
+                         <p>jitendapradhan213@gamil.com</p>
+                         <p>+919348874153</p>
+                         <address>
+                             plot no. 102 3rd floor<br>
+                             near shop ,secuderbad<br>
+                             Hyderbad,50006
+    
+                         </address>
+                        
+                    </div>
+                     <div id="column">
+                        <p>FAQ</p>
+                        <p>Romantic Song</p>
+                        <p>lord song</p>
+                        <p>Impressum</p>
+                        <p>site map</p>
+                     </div>
+                     <div id="column" style="line-height:2.5em;">
+                         <h2>Massage Us</h2>
+                         <input type="text" name="" id="" placeholder="Enter your name"><br>
+                         <input type="email" name="" id="" placeholder="Enter your Email"><br>
+                         <input type="text" name="" id="" placeholder="Mobile Number"><br>
+                         <textarea name="" id="" cols="30" rows="10" placeholder="write something....."></textarea>
+                         <button type="submit" style="padding:0.5em 2em;border-radius:2px;margin-top:-12px;">Send</button>
+                     </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

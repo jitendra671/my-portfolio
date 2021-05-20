@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+     <script src="../node_modules/jquery/dist/jquery.js"></script>
+     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <title>Document</title>
+    <script>
+        "use strict"
+       
+        var y=80;
+        function submitclick(){
+            document.getElementById("inname").innerHTML= document.getElementById("Txtname").value;
+            document.getElementById("inno.").innerHTML=document.getElementById("Txtno.").value;
+            document.getElementById("inmail").innerHTML=document.getElementById("Txtmail").value;
+            document.getElementById("inlo").innerHTML=document.getElementById("Txtlo").value;
+            document.getElementById("details").style="display:block";
+        }
+        function f1(){
+            window.x=10;
+          alert("x=" + x);
+        }
+          function f2(){
+              alert("y="+ y*x);
+
+          }
+        
+        f1();
+        f2();
+        
+        
+    </script>
+</head>
+<body>
+    <a href="#Register" data-toggle="modal">Register</a>
+    <div id="details" style="display: none;" >
+        <dl class="row">
+            <dt class="col-2">Name</dt>
+            <dd class="col-10" id="inname"></dd>
+            <dt class="col-2">mobile-Number</dt>
+            <dd class="col-10" id="inno."></dd>
+            <dt class="col-2">Email-id</dt>
+            <dd class="col-10" id="inmail"></dd>
+            <dt class="col-2">location</dt>
+            <dd class="col-10" id="inlo"></dd>
+        </dl>
+    </div>
+    <div class="modal fade" id="Register">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Register Form</h2>
+                    <div class="modal-close" data-dismiss="modal">X</div>
+                      
+                </div>
+                <div class="modal-body">
+                    <div>
+                        <label for="">Name</label>
+                        <input type="text" name="" id="Txtname">
+                    </div>
+                    <div>
+                        <label for="">Mobile number</label>
+                        <input type="text" name="" id="Txtno.">
+                    </div>
+                    <div>
+                        <label for="">Email-id</label>
+                        <input type="email" name="" id="Txtmail">
+                    </div>
+                    <div>
+                        <label for="">Location</label>
+                        <select name="" id="Txtlo">
+                            <option value="select">select</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Delhi">Delhi</option>
+                            <option value="Goa">Goa</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-danger" onclick="submitclick()" data-dismiss="modal">Submit</button>
+                    <button class="btn btn-primary" data-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <p id="para"></p>
+
+</body>
+</html>
+
+

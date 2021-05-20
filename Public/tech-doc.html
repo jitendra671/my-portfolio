@@ -14,7 +14,7 @@
         }
       
         header,footer{
-            background-color:rgb(230, 220, 220);
+            background-color:rgb(89, 228, 233);
             padding:10px;
             border-radius:10px;
             text-align:center;
@@ -24,24 +24,45 @@
                 grid-column:2;
                 grid-row:1;
                 height:30px;
+                position: sticky;
+                top:0;
+                margin-left:2.5em;
             }
             footer{
                 grid-column:2;
                 grid-row:3;
+                margin-left:2.5em;
             }
             article{
                 grid-column:2;
                 grid-row:2;
+                padding: 5em;
+                padding-top:5px;
+            }
+            article p{
+                font-size: 20px;
+                font-family: cursive;
             }
             aside{
                 grid-column:1;
                 grid-row:2;
                 grid-gap:30px;
+                position:fixed;
+                top:0;
+                left:0; 
+                border-right: 1px solid black;
             }
             ul li{
                 list-style: none;
                 margin-bottom:30px;
+                margin-left: 0px;
                 font-size:20px;
+                border-bottom: 1px solid black;
+              
+
+            }
+            ul li a{
+                text-decoration: none;
             }
             span{
                 color: blue;
@@ -62,6 +83,108 @@
             <div id="Introduction">
                 <h2 style="color:red;">Introduction</h2>
                 <p>
+                    <span style="color:red;">Introduction</span>:-A programming language is a formal language comprising a set of strings that produce various kinds of machine code output. Programming languages are used in computer programming to implement algorithms.
+                    Most programming languages consist of instructions for computers. There are programmable machines that use a set of specific instructions, rather than general programming languages. Since the early 1800s,
+                    programs have been used to direct the behavior of machines such as Jacquard looms, music boxes and player pianos.[1] The programs for these machines (such as a player piano's scrolls) did not produce different behavior in response to different inputs or conditions.
+                    Thousands of different programming languages have been created, and more are being created every year. Many programming languages are written in an imperative form (i.e., as a sequence of operations to perform)
+                     while other languages use the declarative form (i.e. the desired result is specified, not how to achieve it).
+                     The description of a programming language is usually split into the two components of syntax (form) and semantics (meaning). Some languages are defined by a specification document (for example,
+                     the C programming language is specified by an ISO Standard) while other languages (such as Perl) have a dominant implementation that is treated as a reference. Some languages have both, with the basic language defined by a standard and extensions taken from the dominant implementation being common.
+                </p>
+                
+                
+            </div>
+            <div id="what">
+                <h2 style="color:rgb(119, 0, 255);">what you should already know</h2>
+                <p>
+                    <span style="color:rgb(119, 0, 255);">what you should already know</span>:-A computer programming language is a language used to write computer programs, which involves a computer performing some kind of computation[4] or
+                     algorithm and possibly control external devices such as printers, disk drives, robots,[5] and so on. For example, PostScript programs are frequently 
+                     created by another program to control a computer printer or display. More generally, a programming language may describe computation on some, possibly abstract, 
+                     machine. It is generally accepted that a complete specification for a programming language includes a description, possibly idealized, of a machine or processor
+                      for that language.[6] In most practical contexts, a programming language involves a computer; consequently, programming languages are usually defined and studied 
+                      this way.[7] Programming languages differ from natural languages in that natural languages are only used for interaction between people, while programming languages also allow humans to communicate instructions to machines.
+                </p>
+                
+            </div>
+              <div id="Java">
+                <h2 style="color:rgb(255, 102, 0);">JavaScript and Java</h2>
+                <p>
+                    <span style="color:rgb(255, 102, 0);">JavaScript and Java</span>:-
+                    1. JavaScript : 
+                    JavaScript is a lightweight programming language(“scripting language”) and used to make web pages interactive.
+                     It can insert dynamic text into HTML. JavaScript is also known as browser’s language. JavaScript(JS) is not similar
+                     or related to Java. Both the languages have a C like a syntax and are widely used in client-side and server-side Web applications, but there are few similarities only. 
+                </p>
+                <p>
+                    2. Java : 
+                    Java is an object-oriented programming language and have virtual machine platform that allows you to create compiled
+                     programs that run on nearly every platform. Java promised, “Write Once, Run Anywhere”. 
+                </p>
+            </div>
+            <div id="Hello-Worlds">
+                <h2 style="color:rgb(255, 0, 0);">Hello Worlds</h2>
+                <p>
+                    <span style="color:rgb(255, 0, 0);">Hello Worlds</span>:-
+                    javascript is a cross-platform,object-oriented scripting langauge.it is
+                    While small test programs have existed since the development of programmable computers, the tradition of using the phrase "Hello, World!" as a test message was influenced by an example program in the seminal 1978 book The C Programming Language.[3] The example program in that book prints "hello, world", and was inherited from a 1974 Bell Laboratories internal memorandum by Brian Kernighan, Programming in C: A Tutorial:[4]
+                </p>
+                    <pre>
+                        <code>
+                            
+                    main( ) {
+                        printf("hello, world\n");
+                     }
+                        </code>
+                    </pre>
+                     <p>
+                        In the above example, the main( ) function defines where the program should start executing. The function body consists of a single statement, a call to the printf function, which stands for "print formatted". This function will cause the program to output whatever is passed to it as the parameter, in this case the string hello, world, followed by a newline character.
+                        The C language version was preceded by Kernighan's own 1972 A Tutorial Introduction to the Language B,[5] where the first known version of the program is found in an example used to illustrate external variables:
+                      
+                     </p>
+                    <pre>
+                        <code>
+                            main( ) {
+                                extern a, b, c;
+                                putchar(a); putchar(b); putchar(c); putchar('!*n');
+                            }
+                             
+                            a 'hell';
+                            b 'o, w';
+                            c 'orld';
+                         </code>
+                     </pre>
+                     <p>  The program also prints hello, world! on the terminal, including a newline character. The phrase is divided into multiple variables because in B, a character constant is limited to four ASCII characters. The previous example in the tutorial printed hi! on the terminal, and the phrase hello,  world! was introduced as a slightly longer greeting that required several character constants for its expression.
+                        The Jargon File claims that "Hello, World!" originated instead with BCPL (1967).[6] This claim is supposedly supported by the archived notes of the inventors of BCPL, Brian Kernighan at Princeton and Martin Richards at Cambridge. The phrase predated by over a decade its usage in computing; as early as the 1950s, it was the catchphrase of radio disc jockey William B. Williams.[7]
+                    </p>
+              
+            </div>
+            <div id="Variable">
+                <h2 style="color:rgb(208, 255, 0);">Variable</h2>
+                <p ><span style="color:rgb(208, 255, 0);">Variable</span>:-
+                    In computer programming, a variable or scalar is a storage location (identified by a memory address) paired with an associated symbolic name, which contains some known or unknown quantity of information referred to as a value or In easy terms a variable is container for different types of data (like integer, float, String and etc...). The variable name is the usual way to reference the stored value, in addition to referring to the variable itself, depending on the context. This separation of name and content allows the name to be used independently of the exact information it represents. The identifier in computer source code can be bound to a value during run time, and the value of the variable may thus change during the course of program execution.[1] [2][3][4]
+
+                    Variables in programming may not directly correspond to the concept of variables in mathematics. The latter is abstract, having no reference to a physical object such as storage location. The value of a computing variable is not necessarily part of an equation or formula as in mathematics. Variables in computer programming are frequently given long names to make them relatively descriptive of their use, whereas variables in mathematics often have terse, one- or two-character names for brevity in transcription and manipulation.
+                    
+                    A variable's storage location may be referenced by several different identifiers, a situation known as aliasing. Assigning a value to the variable using one of the identifiers will change the value that can be accessed through the other identifiers.
+                    
+                    Compilers have to replace variables' symbolic names with the actual locations of the data. While a variable's name, type, and location often remain fixed, the data stored in the location may be changed during program execution.
+                </p>
+               
+            </div>
+            <div id="Declaring-variables">
+                <h2 style="color:rgb(0, 204, 255);">Declaring variables</h2>
+                <p><span style="color:rgb(0, 204, 255);">Declaring variables</span>:-
+                    In computer programming, a declaration is a language construct that specifies properties of an identifier: it declares what a word (identifier) "means".[1] Declarations are most commonly used for functions, variables, constants, 
+                    and classes, but can also be used for other entities such as enumerations and type definitions.[1] Beyond the name (the identifier itself) and the kind of entity (function, variable, etc.), declarations typically specify the data 
+                    type (for variables and constants), or the type signature (for functions); types may also include dimensions, such as for arrays. A declaration is used to announce the existence of the entity to the compiler; this is important in
+                     those strongly typed languages that require functions, variables, and constants, and their types to be specified with a declaration before use, and is used in forward declaration.[2] The term "declaration" is frequently contrasted with the term "definition",[1] but meaning and usage varies significantly between languages; see below.
+                  Declarations are particularly prominent in languages in the ALGOL tradition, including the BCPL family, most prominently C and C++, and also Pascal. Java uses the term "declaration", though Java does not require separate declarations and definitions.
+                </p>
+                
+            </div>
+            <div id="Variable-Scope">
+                <h2 style="color:rgb(80, 90, 38);">Variable Scope</h2>
+                <p><span style="color:rgb(85, 95, 44);">Variable Scope</span>:-
                     javascript is a cross-platform,object-oriented scripting langauge.it is
                     a small and lightweight language. Inside a host enviroment (for example, a web browser)
                     ,Javascript can be connected to the objects of its enviroment to provide programmatic controlover them
@@ -72,40 +195,21 @@
                     JavaScript can be extended for a variey of purposes by supplementing it widthassitonal object, for example
 
                 </p>
-                <ul type=>
-                    <li>Client-side JavaScript extends the core language by supplying</li>
-                </ul>
+                
             </div>
-            <div id="sec">
-                <h2 style="color:rgb(119, 0, 255);">Introduction</h2>
-                <p>
-                    javascript is a cross-platform,object-oriented scripting langauge.it is
-                    a small and lightweight language. Inside a host enviroment (for example, a web browser)
-                    ,Javascript can be connected to the objects of its enviroment to provide programmatic controlover them
-                </p>
-                <p>
-                    Javascript contains a standard library of objects. such as Array, Date and Math,and a 
-                    core set of language elements such as operator, control structures, and statements. core
-                    JavaScript can be extended for a variey of purposes by supplementing it widthassitonal object, for example
-
-                </p>
-                <ul>
-                    <li>Client-side JavaScript extends the core language by supplying</li>
-                </ul>
-            </div>
-           
+   
      </article>
         
     <aside>
         <h2>Js Documentation</h2>
      <ul>
-        <li> <a href="# Introduction"> Introduction</a></li>
-        <li> <a href="#sec">what you should already know</a> </li>
-        <li> <a href="">JavaScript and Java</a> </li>
-        <li> <a href="">Hello Worlds</a> </li>
-        <li> <a href="">Variable</a></li>
-        <li> <a href=""> Declaring variables</a></li>
-        <li> <a href=""> Variable Scope</a></li>
+        <li> <a href="#Introduction"> Introduction</a></li>
+        <li> <a href="#what">what you should already know</a> </li>
+        <li> <a href="#Java">JavaScript and Java</a> </li>
+        <li> <a href="#Hello-Worlds">Hello Worlds</a> </li>
+        <li> <a href="#Variable">Variable</a></li>
+        <li> <a href="#Declaring-variables"> Declaring variables</a></li>
+        <li> <a href="#Variable-Scope"> Variable Scope</a></li>
     </ul>
     
     </aside>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Image Slider</title>
+    <style>
+        body{
+            background-color:rgb(0, 0,0,0.1);
+        }
+        .container-fluid{
+            border:1px solid black;
+            background-color:#FCFCFC;
+            width: 25%;
+            height:500px;
+            margin-top:10%;
+            margin-left:40%;
+            text-align: center;
+            border-radius: 10px;
+        
+        }
+        .socialmedia-btn{
+            padding-bottom:3em;
+        }
+       .socialmedia-btn a{
+           text-decoration: none;
+           margin-right:5px;
+       }
+        #facebook{
+            background-color: rgb(66,103,178);
+            color:#FCFCFC;
+            padding:0.5em;
+            font-size:18px;
+            border-radius: 5px;
+        }
+        #twitter{
+            background-color:rgb(29,161,242);
+            color: white;
+            padding:0.5em;
+            font-size:18px;
+            border-radius: 5px;
+        }
+        #Google{
+            background-color:rgb(242, 29, 29);
+            color: white;
+            padding:0.5em;
+            font-size:18px;
+            border-radius: 5px;
+        }
+        
+        input{
+            line-height: 30px;
+            margin-left:-5px;
+            margin-top: 15px;
+            width:70%;
+            border-radius:10px;
+            outline: none;  
+        }
+        #signup-btn{
+            margin-top:30px;
+            background-color:green;
+            width: 75%;
+            padding:10px;
+        }
+        #signup-btn a{
+            text-decoration:none;
+            color: white;
+            font-size:15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+            <h2>Create an Account</h2>
+            <p>create you new account using social media</p>
+            <div class="socialmedia-btn">
+                    <a href="" id="facebook"><span class="fab fa-facebook-square"></span> Facebook</a> 
+                    <a href="" id="twitter"><span class="fab fa-twitter"></span> Twitter</a> 
+                    <a href="" id="Google"><span class="fab fa-google"></span> Google</a> 
+            </div>
+               ----------------or----------------
+            <div class="form-group">
+                    <input type="text" name="" id="" placeholder="Username"><br>
+                    <input type="email" name="" id="" placeholder="Email Address"><br>
+                    <input type="password" name="" id="" placeholder="Password"><br>
+                    <input type="password" name="" id="" placeholder="Confirm Password">
+
+            </div>   
+            <button id="signup-btn"><a href="">Sign Up</a></button>
+    </div>
+</body>
+</html>
