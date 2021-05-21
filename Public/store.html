@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+         }
+         .container{
+             display:flex;
+             flex-direction:column;
+         }
+         .header{
+             display: flex;
+             background-color: rgba(0,0,0,0.5);
+             height:80px;
+             padding-top:14px;
+             
+         }
+         #nav-link{
+                display: flex;
+                margin-left: 7em;
+                
+         }
+         #nav-link li{
+             list-style-type: none;
+             margin-left:4em;
+             font-size:1.2em;
+         }
+         #icon{
+             font-size: 1.2em;
+         }
+         .carousel-item img{
+             height:750px;
+         }
+         .section{
+           margin-top: 10em;
+           background-color: #FCFCFC;
+         }
+         .card{
+             width:450px;
+             position:relative;
+
+         }
+         .card img{
+             height:400px;
+             width:440px;
+
+         }
+         .footer{
+           margin-top: 5em;
+           height:400px;
+           background-image:url("../picture/footer-img.jpg");
+           color:white;
+           background-size: cover;
+           background-repeat: no-repeat;
+           background-attachment: fixed;
+         }
+         .footer span{
+           font-size: 2em;
+           color:black;
+         }
+         #sub-footer{
+           margin-top:10px;
+         }
+    </style>
+</head>
+<body class="container-fluid">
+    <div class="header">
+        <div class="col-2 ">
+            <h2><span class="fas fa-shopping-bag text-info"></span> VegiesMart</h2>
+        </div>
+        <div class="col-8" id="nav-link">
+            <li>Home</li>
+            <li>Pages</li>
+            <li>Blog</li>
+            <li>gallery</li>
+            <li>elements</li>
+            <li>shop</li>
+         </div>
+         <div class="col-2">
+             <span class="fas fa-search" id="icon"></span>
+             <span class="fas fa-cart-plus" id="icon"></span>
+             <span class="fas fa-bars" id="icon"></span>
+         </div>
+    </div>
+    <div class="carosal">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../picture/veg.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Fresh Vegetable</h5>
+                  <p class="text-uppercase text-light text">If you eat fresh foods that have a living energy, the food returns that living energy.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../picture/dry fruits.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-light">Dry Fruit</h5>
+                  <p class="text-uppercase text-light" >Your body is your temple, keep it pure and clean for the soul to reside in.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../picture/fruits.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 class="text-dark">Fresh Fruits</h5>
+                  <p class="text-uppercase text-dark">Eat real food & feel real good.</p>
+                </div>
+              </div>
+        
+            </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </div>
+    <div class="section">
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="../picture/chicken.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-secondary"> Fresh Chicken</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;250/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../picture/fish.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-secondary">Fresh fish</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;310/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../picture/mango.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h3 class="card-title text-center text-secondary"> Mango</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;100/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                </div>
+              </div>
+            </div>
+        </div>    
+        
+        <div class="row row-cols-1 row-cols-sm-3 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="../picture/sapota(chikoo).PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-title text-center text-secondary">sapota(chikoo)</h3>
+                        <h4 class="card-text text-center text-danger">&#8377;67/-</h4>
+                        <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../picture/coconut.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title text-center text-secondary">Coconut</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;30/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                    <img src="../picture/grapes.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h3 class="card-title text-center text-secondary">Grapes</h3>
+                      <h4 class="card-text text-center text-danger">&#8377;60/-</h4>
+                      <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                    </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../picture/sanitary-pad.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title text-center text-secondary">Sanitary-Pad</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;58/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../picture/tatasalt.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title text-center text-secondary">TATA Salt</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;40/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card">
+                  <img src="../picture/steel-lemon.PNG" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h3 class="card-title text-center text-secondary">Steel-Lemon</h3>
+                    <h4 class="card-text text-center text-danger">&#8377;70/-</h4>
+                    <button class="bg-success p-2 w-100"><span class="fas fa-shopping-cart text-right ">&nbsp;</span>BUY NOW</button>
+                  </div>
+                </div>
+              </div>
+              
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row" id="sub-footer">
+            <div class="col-3">
+                <span class="fas fa-fish"></span>
+                <h3>Quality products</h3>
+                <p>we work with the best suppliers to offer our customers the fresh grocery product of the highest quality</p>
+            </div>
+            <div class="col-3">
+              <span class="fas fa-coins"></span>
+              <h3>Affordables prices</h3>
+              <p>Thanks to our affordable pricing policy,our customers don't have to everpay for the products they need</p>
+            </div>
+            <div class="col-3">
+              <span class="fas fa-shipping-fast"></span>
+              <h3>Fast shipping </h3>
+              <p>Our store offers fast worldwide shipping to all customers regardless of what and how much you order.</p>
+            </div>
+            <div class="col-3">
+              <span class="fas fa-clock text-center"></span>
+              <h3>open 24/7</h3>
+              <p>Unline other grocoery shops,we are ready to serve you 24/7 and offer the best selection of groceries</p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
