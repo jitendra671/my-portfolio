@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../node_modules/bootstrap/dist/css/bootstrap.css"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+        .container{
+            border:8px solid red;
+            width:60%;
+            border-radius: 15px;
+        }
+        .form-container{
+            margin:3em;
+        }
+        .header{
+            background-color: silver;
+            width: 670px;
+            margin:70px;
+            padding: 10px;
+            border-radius:20px;
+        }
+        select{
+            width:5em;
+            height:31px;
+        }
+        input{
+            background-color:rgb(250, 248, 248);
+            outline: none;
+        }
+        
+        #last{
+            margin-left:20em;
+            margin-top:-5.1em;
+        }
+        #phn{
+            margin-left:5.1em;
+            margin-top:-3.4em;
+        }
+        #address input[type="text"]{
+            height: 50px;
+        }
+        #check{
+            font-size:18px;
+        }
+        #line{
+            width: 90%;
+            background-color:silver;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2 class="text-center">Covid Plasma Donation</h2>
+            <p class="text-center w-75 ml-xl-5 ">Thank you for your interest. A member of our team will reach out if you are a cadidate for the program.</p>
+
+        </div>
+        <hr id="line">
+        <div class="form-container">
+            <h3 class="text-center text-primary text-uppercase">Donor Information</h3>
+            <div class="form-group">
+                <h4>Name</h4>
+                <input type="text" name="" id="" ><br>
+                <label for="">First Name</label>
+               
+            </div>
+            <div class="form-group" id="last">
+                <input type="text" name="" id="" ><br>
+                <label>Last Name</label>
+            </div>
+            <div class="form-group">
+                <h4>Birth Date</h4>
+                <input type="date" name="" id=""><br>
+                <span>Date</span>
+            </div>
+            <div class="form-group">
+                <h4>Age</h4>
+                 <input type="text" name="" id="" placeholder="ex: 23">
+            </div>
+            <div class="form-group" id="check">
+                <h4>Gender</h4>
+                <input type="checkbox" name="" id="">Male<br>
+                <input type="checkbox" name="" id="">Female
+            </div>
+            <div class="form-group">
+                <h4>Email</h4>
+                <input type="email" name="" id=""><br>
+                <span>example@gmail.com</span>
+            </div>
+            <div class="form-group">
+                <h4>Phone Number</h4>
+                <select name="" id="">
+                    <option value="">+91</option>
+                    <option value="">+11</option>
+                    <option value="">+81</option>
+                    <option value="">+71</option>
+                    <option value="">+21</option>
+                </select><br>
+                <span>Area code</span>
+            <div class="form-group" id="phn">
+                <input type="text" name="" id=""><br>
+                <span>Phone Number</span>
+            </div>    
+            <div style="line-height:2em;" id="address">
+                <h4>Address</h4>
+             <div class="form-group">
+                <input type="text" name="" id=""style="width:90%;height:40px"><br>
+                <label >Street Address</label>
+             </div>
+             <div class="form-group">
+                <input type="text" name="" id="" style="width:90%;height:40px"><br>
+                <label>Street Address Line 2</label>
+             </div>
+              <div class="form-group">
+                <input type="text" name="" id="" style="width:35%;height:40px"><br>
+                <label>City</label>
+              </div>
+              <div class="form-group" style="margin-left:20em;margin-top:-6.1em;">
+                <input type="text" name="" id="" style="width:65%;height:38px"><br>
+                <label>State/Province</label>
+              </div>
+              <div class="form-group">
+                <input type="text" name="" id="" style="height:38px"><br>
+                <label>Postal / Zip Code</label>
+              </div>
+            </div>
+             
+            <div class="form-group">
+                <h4>Blood Type</h4>
+                <select name="" id="">
+                    <option value="">A+</option>
+                    <option value="">B+</option>
+                    <option value="">AB+</option>
+                    <option value="">o+</option>
+                    <option value="">A-</option>
+                    <option value="">B-</option>
+                </select>
+            </div>
+            <div class="form-group" id="check">
+                <h4>Was your COVID-19 diagnosis confirmed by a lab test?</h4>
+                <input type="checkbox" name="" id="">Yes<br>
+                <input type="checkbox" name="" id="">NO
+            </div>
+            <div class="form-group" id="check">
+                <h4>Do you currently have symptoms?</h4>
+                <input type="checkbox" name="" id="">Yes<br>
+                <input type="checkbox" name="" id="">NO
+            </div>
+            <div class="form-group" >
+                <h4>Date of last symptoms(approximate):</h4>
+                <input type="date" name="" id=""><br>
+                <label>Date</label>
+            </div>
+            <div class="form-group" id="check">
+                <h4>Have you had a follow up test that was negative for COVID-19</h4>
+                <input type="checkbox" name="" id="">Yes<br>
+                <input type="checkbox" name="" id="">NO
+            </div>
+            <div class="form-group" id="check">
+                <input type="checkbox" name="" id=""> I agree to <a href="">terms & condition.</a><sup>*</sup>
+            </div>
+            <div class="form-group">
+                <h4>Signature</h4>
+                <textarea name="" id="" cols="40" rows="8"></textarea><br>
+                <a href="">Clear</a>
+            </div>
+            <button>Submit</button>
+            
+        </div>
+    </div>
+</body>
+</html>
