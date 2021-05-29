@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KitchenBlog.com</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+       .container{
+           display:flex;
+           flex-direction: column;
+           background-color: rgb(255, 241, 224);
+           width: 80%;
+           height:2300px;
+           margin-top:0px;
+           margin-left:10em;
+           align-items: center;
+
+       } 
+       .header{
+           display: flex;
+           flex-direction: column;
+       }
+       .navbar{
+           padding: 3em 0em;
+       }
+       .navbar li{
+           list-style-type: none;
+           display: inline-block;
+           margin-left:10em;
+
+       }
+       .follow-up{
+           display:flex;
+           flex-direction: row;
+           padding: 15px;
+       }
+       .right-aside{
+           position:relative;
+           background-color: rgb(247, 243, 250);
+           padding: 10em;
+       }
+       .article {
+            display:flex;
+           flex-direction: row;
+          
+       }
+       .article div{
+           padding: 2em;
+       }
+       
+       #blog h1{
+           margin-top: -234px;
+           margin-left: 220px;
+           color: white;
+           height: 10px;
+       }
+       #about h1{
+           margin-top: -234px;
+           margin-left: 193px;
+           color: white;
+           height: 10px;
+       }
+
+       #des1 img{
+           padding:0.5em 2em;
+       }
+       .des1-content{
+        position: absolute;
+        margin-top: -566px;
+        margin-left: 564px;
+        background-color:rgba(0, 0, 0, 0.4);
+        color:white;
+        height: 553px;
+        width: 632px;
+        text-align: center;
+        padding-top:161px;
+       }
+       .description{
+           margin-top: 15em;
+       }
+       
+       #des2{
+       background-color:rgb(230, 223, 230);
+        height:350px;
+        width: 100%;
+        text-align: center;
+        padding: 2em;
+      
+       }
+       button{
+           padding:0.5em 2em;
+           background-color: turquoise;
+       }
+       
+       
+    </style>
+</head>
+<body >
+    <div class="container">
+        <h2 style="text-transform: uppercase;margin-top:30px;">Happy </h2>
+        <h3 style="font-family:cursive;padding:0.5em;font-weight: lighter;font-style: italic;">Kitchen Style</h3>
+        <div class="header">
+           <div class="navbar">
+               <ul>
+                   <li>Home</li>
+                   <li>Blog</li>
+                   <li>My Life Story</li>
+                   <li>About</li>
+                   <li>Contact</li>
+
+               </ul>
+           </div>
+           <div class="follow-up ">
+               <div class="left-aside">
+                   <img src="../picture/kitc.jpg" alt="" srcset="" height="600px" width="400px">
+               </div>
+               <div class="right-aside">
+                   <h1 style="font-family:cursive;padding:0.5em;font-weight: lighter;font-style: italic;text-align: center;">Welcome</h1>
+                   <p style="text-align:center;">Microsoft, the device manufacturer or installer may include additional apps, which will be subject to separate license terms and privacy policies.
+                   </p>
+                   <button style="background-color: black;color:white;padding:8px 15px;margin-top:20px;margin-left:13em;">Follow up</button>
+               </div>
+           </div>
+        </div>
+        <div class="session">
+           <div class="article">
+               <div id="blog">
+                  <img src="../picture/Dish10.jpg" alt="" srcset="" height="400px" width="550px">
+                  <h1> Blog</h1>
+               </div>
+               <div id="about" >
+                <img src="../picture/ame.jpg" alt="" srcset="" height="400px" width="550px">
+                 <h1>About Me</h1>
+               </div>
+           </div>
+           <div class="description">
+            <div id="des1">
+                <img src="../picture/kitch.jpg" height="570px" width="100%" alt="">
+                <div class="des1-content">
+                   <h1>Enjoy It</h1>
+                   ----------------------
+                   <h1>With Your Family</h1>
+                </div>
+            </div>
+            <div id="des2">
+               <p>As a special thank you for my follower .I will welcome to my kitchen blog!</p>
+               <h2 style="font-family:cursive;padding:0.5em;font-weight: lighter;font-style: italic;color:rgb(201, 46, 15);">"My Favorite Dish Fish Fry" </h2>
+               <textarea name="" id="" cols="30" rows="10"></textarea><br>
+               <button>Comment Me</button>
+            </div>
+          </div>
+          
+        </div>
+        <div class="footer">
+            
+        </div>
+    </div>
+</body>
+</html>
