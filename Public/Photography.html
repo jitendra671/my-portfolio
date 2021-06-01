@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <title>Photography Website</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        table{
+            width:100%;
+           border:1;
+        }
+        .container{
+
+            background-color:#FCFCFC;
+            display:flex;
+            flex-direction: column;
+        }
+        
+        .header div{
+            display:inline-block;
+            margin-right: 10em;
+        }
+        .header div li{
+            list-style-type:none;
+            display: inline-block;
+            margin-right:1em;
+            margin-bottom: 2em;
+        }
+        .header div li a{
+            text-decoration: none;
+        }
+        .main-content{
+            font-family: cursive;
+            font-weight: lighter;
+            font-style: italic;
+            margin-left:-4em ;
+            color:rgb(105, 109, 109);
+        }
+        
+        #mphoto{
+            padding: 2em;
+            box-shadow:12px 10px 5px rgba(0,0,0,0.5);
+            
+        }
+        #about{
+            padding: 2em;
+        }
+        #about h2{
+            font-family: cursive;
+            font-weight: lighter;
+            font-style: italic;
+            color:cornflowerblue;
+            margin-bottom: 1em;
+        }
+        #about p{
+            text-align: left;
+            line-height:1.5em;
+            margin-bottom:2em;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #about button{
+            padding:1em 3em;
+            background-color: rgb(131, 123, 123);
+            color:white;
+            margin-left: 20em;
+        }
+        #sales{
+            background-color:black;
+            height: 400px;
+            padding: 2em 28em;
+            text-align: center;
+
+       }
+       #sales h2{
+           color:rgb(231, 216, 231);
+           margin-bottom: 1em;
+         }
+       #sales p{
+           color:white;
+           width:600px;
+           font-size: 1.5em;
+           font-weight: lighter;
+           font-family: cursive;
+           font-style: italic;
+        }
+        #sales input{
+            height: 3em;
+            width: 15em;
+        }
+        #sales button{
+            background-color: rgb(234, 233, 236);
+            padding: 1em 3em;
+            color:black;
+        }
+        #img img{
+            box-shadow:12px 10px 5px rgba(0,0,0,0.5);
+
+        }
+        #footer{
+            background-color: black;
+            color:rgb(250, 234, 234);
+            height: 300px;
+            font-weight: lighter;
+           font-family: cursive;
+           font-style: italic;
+        }
+        
+    </style>
+</head>
+<body class="container-fluid">
+    <table>
+        <!-----------------Header session------------->
+        <thead>
+            <th class="header" colspan="2">
+                <div>
+                    <ul>
+                        <li><span class="fab fa-facebook" ></span></li>
+                        <li><span class="fab fa-instagram" ></span></li>
+                        <li><span class="fab fa-linkedin" ></span></li>
+                        <li><span class="fab fa-whatsapp"></span></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="main-content">
+                    <h2>Wedding photography</h2>
+                    <p>Presentation By Jitendra</p>
+                </div>
+                <div>
+                    <ul>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><input type="text" name="" id="" placeholder="Search"></li>
+                    </ul>
+                </div>
+            
+            </th>
+        </thead>
+        <!-----------------Body session------------->
+        <tbody>
+            <tr>
+                <td colspan="2">
+                <img src="../picture/couple.jpg" height="700px" width="100%" alt="">
+                </td>
+            </tr>
+            <tr id="main-profile">
+                <td id="mphoto">
+                    <img src="../picture/photographer.jpg" height="400px" width="600px" alt="">
+                </td>
+                <td id="about" >
+                    <h2 >Hi Friend , I'M Jitendra</h2>
+                    <p>If it's quite clear, I'm a photographer based on Odisha,India ! Mostly hang with pees saying "i do!". but i capture it 
+                        all... except for 1 year olds. kidding .Your kids will love me.
+                    </p>
+                    <p>He ! yes i travel on marraige party the home town of My state Odisha ! it give me lot pleasure.</p>
+                    <p>I offer Wedding and other type of Photography packages beacuse i'm a huge fan of doing what the heck you want ! I love the indian Culture and it's trandition ! LOVE YOU ALL</p>
+                    <button>MORE ABOUT ME</button>
+                </td>
+            </tr>
+             <tr>
+                 <td colspan="2" id="sales">
+                     <h2>STAY IN THE KNOW !</h2>
+                     <p>I love free stuff , who doesn't?! There's noting better than a sale on sessions, free giveaways,or huge discounts on package ! Plus, you can stay up  to date on blog posts and really be besties with me. What could be better?!</p>
+                     <div>
+                         <input type="text" name="" id="" placeholder="Email Address">
+                         <button>SIGN UP</button>
+                     </div>
+                 </td>
+             </tr>
+             <tr >
+                 <td rowspan="2" id="img">
+                     <img src="../picture/marraige.jpg" height="600px" width="800px" alt="">
+                 </td>
+                 <td id="img">
+                     <img src="../picture/baby4.jpg" height="300px" width="800px" alt="">
+                    
+                     <img src="../picture/baby3.jpg" height="300px" width="800px" alt="">
+                     
+                 </td>
+           </tr>
+        </tbody>
+        <!-----------------Footer session------------->
+         <tfooter>
+            <tr>
+                <th id="footer" colspan="2">
+                    <h2>STAY CONNECT WITH US</h2>
+                    <h1>Thank YOU !</h1>
+                </th>
+            </tr>
+         </tfooter>
+    </table>
+    
+</body>
+</html>
