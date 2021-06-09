@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Font/css/all.css">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        #content{
+            position:relative;
+            bottom: -195px; 
+        }
+        #content p{
+            font-size: 8em;
+            text-align: center;
+            color: white;
+            font-weight: lighter;
+        }
+        #search-box{
+            position: relative;
+            text-align: center;
+            margin-top: 195px;
+        }
+        #search-box span{
+            position: absolute;
+            margin-top: 13px;
+            margin-left: 10px;
+            font-size: 20px;
+        }
+        #search-box input[type="text"]{
+           width: 45%;
+           height: 50px;
+           border-radius: 20px;
+           font-size:20px;
+           padding-left:2em;
+           outline: none;
+           
+        }
+        #App-v{
+            display:flex;
+            position: absolute;
+            z-index:1;
+            right: 2px;
+            top:20px;
+            cursor: pointer;
+        }
+        #App-v #grid{
+              color:rgb(18, 72, 250);
+              font-size:2.5em;
+              margin-right: 30px;
+        }
+        #App-v #grid:hover{
+            color:rgb(9, 149, 204);
+        }
+        #App-v #gmail{
+            background-color: rgb(218, 25, 170);
+            padding:8px 18px;
+            font-size: 1.5em;
+            border-radius:50%;
+            color:white;
+            margin-right: 20px;
+        }
+        img{
+            position:absolute;
+            width: 100vw;
+            height:100vh;
+        }
+        @media screen and (max-width:700px) {
+          #content p{
+            font-size: 5em;
+          }
+          #search-box input[type="text"] {
+              width: 74%;
+              height: 37px;
+              font-size: 14px;
+    
+         }
+         #search-box span {
+            margin-top: 13px;
+            font-size: 12px;
+         }
+         #App-v #grid {
+            font-size: 1.7em;
+    
+         }
+         #App-v #gmail {
+            padding: 5px 12px;
+            font-size: 1em;
+    
+        }
+         img{
+             display: none;
+         }
+   
+        }
+  </style>
+</head>
+<body class="container">
+    <img src="../picture/odishi.jpg" alt="">
+    <div id="App-v">
+        <span class="fas fa-th" id="grid"></span>
+        <span id="gmail">J</span>
+    </div>
+    <div id="content">
+        <p><span style="color:rgb(53, 92, 221)">G</span><span style="color:red">o</span><span style="color:yellow">o</span><span style="color:rgb(53, 92, 221)">g</span ><span style="color:rgb(19, 119, 32)">l</span ><span style="color:rgb(230, 22, 22);">e</span></p>
+   </div>
+    <div id="search-box">
+        <span class="fas fa-search"></span><input type="text" name="" id="" placeholder="Search Google or Type a URL">
+    </div>
+   
+</body>
+</html>
